@@ -1,0 +1,708 @@
+:root {
+    --cor01: #7C4330;
+    --cor02: #E6DDD4;
+
+
+    --font-importada: "Montserrat", sans-serif;
+    --font-texto-principal: "Cormorant Garamond", serif;
+}
+
+/* TELAS MENORES ENTRE 320PX */
+
+@media screen and (max-width: 320px) {
+    main {
+        height: 100dvh;
+        background-image: url("../img/background-doispositivo-pequeno.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-principal>h1 {
+        display: none;
+    }
+
+    main .container-links {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    main .container-links .texto {
+        display: none;
+    }
+
+    main .container-links .logo-mobile {
+        width: 300px;
+        margin: 0 auto;
+        position: relative;
+        top: 46%;
+        display: block;
+    }
+
+    main .container-links .logo-mobile>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .container-links .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 47%;
+        height: 150px;
+    }
+
+    main .container-links .container-box .box {
+        flex-direction: column;
+        /* width: 113px; */
+        width: 95px;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        border-radius: 0;
+    }
+
+    .link-bloco:not(:last-child) {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main .container-links .container-box .box .icone {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 14px;
+        text-align: center;
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box .icone>i {
+        font-size: 1.7rem;
+        color: var(--cor01);
+        padding: 0;
+    }
+
+    main .container-links .container-box .box>p {
+        color: #fff;
+        font-family: var(--font-importada);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: .60rem;
+        padding-top: 17px;
+    }
+
+    main .container-links .texto-final {
+        display: block;
+        position: relative;
+        top: 55%;
+        animation: divFlutuante 2s ease-in-out infinite ;
+    }
+
+    main .container-links .texto-final>p {
+        color: var(--cor01);
+        font-family: var(--font-importada);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    main .container-links .texto-final>p>i {
+        font-size: 1.2rem;
+    }
+
+    /* ANIMAÇÕES COM HOVER */
+
+    main .container-links .container-box .box .icone:hover {
+        background-color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover {
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box:hover p {
+        color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover i {
+        color: var(--cor01);
+    }
+
+    /* FIM */
+
+    /* ANIMAÇÕES KEYFRAMES */
+    @keyframes divFlutuante {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    /* FIM */
+}
+
+/* TELAS COM 360PX */
+@media screen and (min-width:321px) and (max-width: 360px) {
+    main {
+        height: 100dvh;
+        background-image: url("../img/background-doispositivo-pequeno.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-principal>h1 {
+        display: none;
+    }
+
+    main .container-links {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    main .container-links .texto {
+        display: none;
+    }
+
+    main .container-links .logo-mobile {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+        top: 46%;
+        display: block;
+    }
+
+    main .container-links .logo-mobile>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .container-links .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 47%;
+        height: 150px;
+    }
+
+    main .container-links .container-box .box {
+        flex-direction: column;
+        /* width: 113px; */
+        width: 100px;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        border-radius: 0;
+    }
+
+    .link-bloco:not(:last-child) {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main .container-links .container-box .box .icone {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 14px;
+        text-align: center;
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box .icone>i {
+        font-size: 1.7rem;
+        color: var(--cor01);
+        padding: 0;
+    }
+
+    main .container-links .container-box .box>p {
+        color: #fff;
+        font-family: var(--font-importada);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: .75rem;
+        padding-top: 17px;
+    }
+
+    main .container-links .texto-final {
+        display: block;
+        position: relative;
+        top: 52%;
+        animation: divFlutuante 2s ease-in-out infinite ;
+    }
+
+    main .container-links .texto-final>p {
+        color: var(--cor01);
+        font-family: var(--font-importada);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    main .container-links .texto-final>p>i {
+        font-size: 1.2rem;
+    }
+
+    /* ANIMAÇÕES COM HOVER */
+
+    main .container-links .container-box .box .icone:hover {
+        background-color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover {
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box:hover p {
+        color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover i {
+        color: var(--cor01);
+    }
+
+
+    /* ANIMAÇÕES KEYFRAMES */
+    @keyframes divFlutuante {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    /* FIM */
+}
+
+/* TELAS COM 390PX */
+@media screen and (min-width:361px) and (max-width: 390px) {
+    main {
+        height: 100dvh;
+        background-image: url("../img/background-doispositivo-pequeno.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-principal>h1 {
+        display: none;
+    }
+
+    main .container-links {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    main .container-links .texto {
+        display: none;
+    }
+
+    main .container-links .logo-mobile {
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        top: 46%;
+        display: block;
+    }
+
+    main .container-links .logo-mobile>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .container-links .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 47%;
+        height: 150px;
+    }
+
+    main .container-links .container-box .box {
+        flex-direction: column;
+        /* width: 113px; */
+        width: 113px;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        border-radius: 0;
+    }
+
+    .link-bloco:not(:last-child) {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main .container-links .container-box .box .icone {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 14px;
+        text-align: center;
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box .icone>i {
+        font-size: 1.7rem;
+        color: var(--cor01);
+        padding: 0;
+    }
+
+    main .container-links .container-box .box>p {
+        color: #fff;
+        font-family: var(--font-importada);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: .75rem;
+        padding-top: 17px;
+    }
+
+    main .container-links .texto-final {
+        display: block;
+        position: relative;
+        top: 52%;
+        animation: divFlutuante 2s ease-in-out infinite ;
+    }
+
+    main .container-links .texto-final>p {
+        color: var(--cor01);
+        font-family: var(--font-importada);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    main .container-links .texto-final>p>i {
+        font-size: 1.2rem;
+    }
+
+    /* ANIMAÇÕES COM HOVER */
+
+    main .container-links .container-box .box .icone:hover {
+        background-color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover {
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box:hover p {
+        color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover i {
+        color: var(--cor01);
+    }
+
+    /* ANIMAÇÕES KEYFRAMES */
+    @keyframes divFlutuante {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    /* FIM */
+}
+
+/* TELAS COM 440PX */
+@media screen and (min-width:391px) and (max-width: 740px) {
+    main {
+        height: 100dvh;
+        background-image: url("../img/background-doispositivo-pequeno.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-principal>h1 {
+        display: none;
+    }
+
+    main .container-links {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    main .container-links .texto {
+        display: none;
+    }
+
+    main .container-links .logo-mobile {
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        top: 46%;
+        display: block;
+    }
+
+    main .container-links .logo-mobile>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .container-links .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 47%;
+        height: 150px;
+    }
+
+    main .container-links .container-box .box {
+        flex-direction: column;
+        /* width: 113px; */
+        width: 113px;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        border-radius: 0;
+    }
+
+    .link-bloco:not(:last-child) {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main .container-links .container-box .box .icone {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 14px;
+        text-align: center;
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box .icone>i {
+        font-size: 1.7rem;
+        color: var(--cor01);
+        padding: 0;
+    }
+
+    main .container-links .container-box .box>p {
+        color: #fff;
+        font-family: var(--font-importada);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: .75rem;
+        padding-top: 17px;
+    }
+
+    main .container-links .texto-final {
+        display: block;
+        position: relative;
+        top: 52%;
+        animation: divFlutuante 2s ease-in-out infinite ;
+    }
+
+    main .container-links .texto-final>p {
+        color: var(--cor01);
+        font-family: var(--font-importada);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    main .container-links .texto-final>p>i {
+        font-size: 1.2rem;
+    }
+
+    /* ANIMAÇÕES COM HOVER */
+
+    main .container-links .container-box .box .icone:hover {
+        background-color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover {
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box:hover p {
+        color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover i {
+        color: var(--cor01);
+    }
+
+    /* ANIMAÇÕES KEYFRAMES */
+    @keyframes divFlutuante {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    /* FIM */
+}
+
+
+/* TELAS COM 740PX */
+@media screen and (min-width:741px) and (max-width:1024px) {
+    main {
+        height: 100dvh;
+        background-image: url("../img/background-dispositivo-maior.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container-principal>h1 {
+        display: none;
+    }
+
+    main .container-links {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    main .container-links .texto {
+        display: none;
+    }
+
+    main .container-links .logo-mobile {
+        width: 600px;
+        margin: 0 auto;
+        position: relative;
+        top: 46%;
+        display: block;
+    }
+
+    main .container-links .logo-mobile>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    main .container-links .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 47%;
+        height: 150px;
+    }
+
+    main .container-links .container-box .box {
+        flex-direction: column;
+        /* width: 113px; */
+        width: 200px;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        border-radius: 0;
+    }
+
+    .link-bloco:not(:last-child) {
+        margin-right: 10px;
+        display: block;
+    }
+
+    main .container-links .container-box .box .icone {
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 14px;
+        text-align: center;
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box .icone>i {
+        font-size: 1.7rem;
+        color: var(--cor01);
+        padding: 0;
+    }
+
+    main .container-links .container-box .box>p {
+        color: #fff;
+        font-family: var(--font-importada);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+        padding-top: 17px;
+    }
+
+    main .container-links .texto-final {
+        display: block;
+        position: relative;
+        top: 55%;
+        animation: divFlutuante 2s ease-in-out infinite ;
+    }
+
+    main .container-links .texto-final>p {
+        color: var(--cor01);
+        font-family: var(--font-importada);
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    main .container-links .texto-final>p>i {
+        font-size: 1.2rem;
+    }
+
+    /* ANIMAÇÕES COM HOVER */
+
+    main .container-links .container-box .box .icone:hover {
+        background-color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover {
+        background-color: var(--cor02);
+    }
+
+    main .container-links .container-box .box:hover p {
+        color: var(--cor01);
+    }
+
+    main .container-links .container-box .box:hover i {
+        color: var(--cor01);
+    }
+
+    /* ANIMAÇÕES KEYFRAMES */
+    @keyframes divFlutuante {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-7px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    /* FIM */
+}

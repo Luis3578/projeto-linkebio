@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor01: #7C4330;
+    --cor02: #E6DDD4;
+
+
+    --font-importada: "Montserrat", sans-serif;
+    --font-texto-principal: "Cormorant Garamond", serif;
+}
+
+
+body {
+    height: 100vh;
+    background-color: var(--cor01);
+}
+
+main {
+    height: 100%;
+    background-image: url("../img/background-desktop.webp");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.texto-final {
+    display: none;
+}
+
+
+/* CONTAINER PRICIPAL */
+
+.container-principal>h1 {
+    color: var(--cor02);
+    font-family: var(--font-texto-principal);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    font-size: 3rem;
+    padding-right: 9rem;
+    max-width: 890px;
+    transition-delay: 100ms;
+}
+
+/* FIM */
+
+/* CONTAINER LINKS */
+
+main .container-links .texto {
+    margin-top: 30%;
+}
+
+main .container-links .texto>p {
+    color: #fff;
+    font-family: var(--font-importada);
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 30px;
+    max-width: 450px;
+    font-size: 1.2rem;
+}
+
+main .container-links .texto>p:nth-child(1) {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    color: var(--cor02);
+    font-family: var(--font-texto-principal);
+    transition-delay: 400ms;
+}
+
+main .container-links .texto>p>span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-top: 25px;
+    display: block;
+    color: var(--cor02);
+}
+
+main .container-links .container-box {
+    padding-top: 1.5rem;
+    transition-delay: 700ms;
+}
+
+main .container-links .container-box .box {
+    background-color: var(--cor01);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 3px solid #000;
+    box-shadow: 0px 10px 10px #0000008c;
+    justify-content: center;
+    margin: 50px 0;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+main .container-links .container-box .box .icone>i {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+
+main .container-links .container-box .box>p {
+    color: #fff;
+    font-family: var(--font-importada);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+/* FIM */
+
+/* ANIMAÇÃO DE HOVER */
+main .container-links .container-box .box:hover {
+    transform: translateY(-7px);
+    background-color: var(--cor02);
+}
+
+main .container-links .container-box .box:hover p {
+    color: var(--cor01);
+}
+
+main .container-links .container-box .box:hover i {
+    color: var(--cor01);
+}
+
+main .container-links .texto>p:nth-child(2) {
+    transition-delay: 500ms;
+}
+
+/* FIM */
+
+/* ANIMAÇOES COM JAVASCRIPT */
+
+.oculto {
+    opacity: 0;
+    filter: blur(7px);
+    transition: all 1s;
+    transition-delay: .2s;
+    transform: translateX(-100%);
+}
+
+.visivel {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* FIM */
